@@ -34,6 +34,16 @@
       <i class="fa fa-volume-up"></i>
     </div>
   </div>
+  <!-- Link back to Playlist Page -->
+  <div class="navigate">
+    <button onclick="window.location.href='playlist.html'">Playlist</button>
+  </div>
+  <script>
+    function selectTrack(trackIndex) {
+      localStorage.setItem('selectedTrackIndex', trackIndex);
+      window.location.href = 'playlist.html';
+    }
+  </script>
   <!-- Load the main script for the player -->
   <script src="main.js"></script>
 </body>
